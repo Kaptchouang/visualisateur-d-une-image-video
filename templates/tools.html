@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camertronix</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<main>
+    {% include "navbar.html" %}
+</main>
+<body>
+
+    <div class="card-container">
+        <a href="{{url_for('viewer')}}">
+            <div class="card">
+              <img src="{{url_for('static', filename='pannellum.jpg')}}">
+              <div class="card-content">
+                <h2>360° viewer</h2>
+                <p>Une visionneuse de produits à 360 degrés est une vue numérique d'un produit qui permet de l'observer de tous les côtés et sous tous les angles. Il peut s'agir d'une image interactive, d'un GIF ou même d'une vidéo.</p>
+              </div>
+            </div>
+        </a>
+          
+        <!-- <div class="card">
+            <img src="{{url_for('static', filename='4_christmas_Mesa_de_trabajo_1.jpg')}}">
+            <div class="card-content">
+                <h2>Card 1</h2>
+                <p>je pars souvent en balade avec des amis</p>
+            </div>
+        </div> -->
+    
+        <div class="card">
+            <img src="{{url_for('static', filename='tof.jpeg')}}">
+            <div class="card-content">
+                <h2>Card 2</h2>
+                <p>je pars souvent en balade avec des amis</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="{{url_for('static', filename='photo.jpg')}}">
+            <div class="card-content">
+                <h2>Card 3</h2>
+                <p>je pars souvent en balade avec des amis</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{url_for('static', filename='photo2.jpg')}}">
+            <div class="card-content">
+                <h2>Card 4</h2>
+                <p>je pars souvent en balade avec des amis</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <div class="table1">
+                <ul>
+                    <li class="menu-tem">
+                        <a href="temis.html">Temis ot privacy policy</a>
+                    </li>
+                    <li class="menu-sup">
+                        <a href="support.html">Support</a>
+                    </li>
+                    <li class="menu-pub">
+                        <a href="public.html">Publics yain coupon</a>
+                    </li>
+                    <li class="menu-cmr">
+                        <a href="camertronix.html">(e) 2024 Camertronix</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple example</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">  
+     <script type="text/javascript" src="{{ url_for('static', filename='js/fichier.js') }}"></script>  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+    <style>
+        #panorama {
+            width: 100%;
+           height: 600px;
+        }
+        </style>
+</head>
+
+<body>
+    <nav>
+        {% include "navbar.html" %}
+    </nav>
+    
+    <main>
+        <input type="file" id="imageUpload" accept="image/*" onchange="changePanorama()">
+          
+        
+          <div id="panorama"></div>
+       
+    </main> 
+
+    <footer>
+        <nav>
+            <div class="table1">
+                <ul>
+                    <li class="menu-tem">
+                        <a href="temis.html">Temis ot privacy policy</a>
+                    </li>
+                    <li class="menu-sup">
+                        <a href="support.html">Support</a>
+                    </li>
+                    <li class="menu-pub">
+                        <a href="public.html">Publics yain coupon</a>
+                    </li>
+                    <li class="menu-cmr">
+                        <a href="camertronix.html">(e) 2024 Camertronix</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script>
+        function changePanorama() {
+            var fileInput = document.getElementById('imageUpload');
+            var file = fileInput.files[0];
+
+            var reader = new FileReader();
+            reader.onload = function (event) {
+                // var panorama = document.getElementById('panorama');
+                // panorama.innerHTML = ''; // Supprime l'image existante
+
+                var img = new Image();
+                img.src = event.target.result;
+            
+                console.log(img)
+                console.log(img.src)
+                
+                    pannellum.viewer('panorama', {
+                    "type": "equirectangular",
+                    "panorama": img.src,
+                    "autoLoad": true
+
+                } )
+                
+             ;
+
+
+            };
+
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
+
+</html> -->

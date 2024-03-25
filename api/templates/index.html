@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camertronix</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<main>
+    {% include "navbar.html" %}
+</main>
+<body>
+
+    <div class="card-container">
+        <a href="{{url_for('viewer')}}">
+            <div class="card">
+              <img src="{{url_for('static', filename='pannellum.jpg')}}">
+              <div class="card-content">
+                <h2>360° viewer</h2>
+                <p>Une visionneuse de produits à 360 degrés est une vue numérique d'un produit qui permet de l'observer de tous les côtés et sous tous les angles. Il peut s'agir d'une image interactive, d'un GIF ou même d'une vidéo.</p>
+              </div>
+            </div>
+        </a>
+          
+        <!-- <div class="card">
+            <img src="{{url_for('static', filename='4_christmas_Mesa_de_trabajo_1.jpg')}}">
+            <div class="card-content">
+                <h2>Card 1</h2>
+                <p>je pars souvent en balade avec des amis</p>
+            </div>
+        </div> -->
+    
+        <div class="card">
+            <img src="{{url_for('static', filename='tof.jpeg')}}">
+            <div class="card-content">
+                <h2>Card 2</h2>
+                <p>je pars souvent en balade avec des amis</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="{{url_for('static', filename='photo.jpg')}}">
+            <div class="card-content">
+                <h2>Card 3</h2>
+                <p>je pars souvent en balade avec des amis</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{url_for('static', filename='photo2.jpg')}}">
+            <div class="card-content">
+                <h2>Card 4</h2>
+                <p>je pars souvent en balade avec des amis</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        {% include "footer.html" %}
+    </footer>
+</body>
+</html>

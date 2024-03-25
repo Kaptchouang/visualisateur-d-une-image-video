@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camertronix</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<main>
+    {% include "navbar.html" %}
+</main>
+<body>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="{{url_for('static', filename='1.jpg')}}">
+            <div class="card-content">
+                <p>1000F</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="{{url_for('static', filename='2.jpg')}}">
+            <div class="card-content">
+                <p>2000F</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="{{url_for('static', filename='sac.jpg')}}">
+            <div class="card-content">
+                <p>5000F</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <div class="table1">
+                <ul>
+                    <li class="menu-tem">
+                        <a href="temis.html">Temis ot privacy policy</a>
+                    </li>
+                    <li class="menu-sup">
+                        <a href="support.html">Support</a>
+                    </li>
+                    <li class="menu-pub">
+                        <a href="public.html">Publics yain coupon</a>
+                    </li>
+                    <li class="menu-cmr">
+                        <a href="camertronix.html">(e) 2024 Camertronix</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

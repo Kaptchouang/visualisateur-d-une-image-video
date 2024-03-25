@@ -15,7 +15,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 ALLOWED_IMG = {"jpg","jpeg" }
 ALLOWED_VID = {"mp4", "webm" }
 
-
+#test  comment
  
 @app.route('/')
 def index():

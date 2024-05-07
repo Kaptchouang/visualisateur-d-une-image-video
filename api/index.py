@@ -43,27 +43,6 @@ def upload():
     return "invalid file type"
 
 
-
-# @app.route('/upload', methods=['POST'])
-# def upload():
-#   if request.method == 'POST':
-#     file = request.files['file']
-#     type = file.content_type.split('/')[0]
-
-#     if type == 'image':
-#       # Sauvegarder l'image
-#       ...
-#       # Rediriger vers la page d'affichage de l'image
-#       ...
-#     elif type == 'video':
-#       # Sauvegarder la vidéo
-#       ...
-#       # Rediriger vers la page d'affichage de la vidéo
-#       ...
-
-
-
-
 @app.route("/about/")
 def about():
     return render_template("about.html")
